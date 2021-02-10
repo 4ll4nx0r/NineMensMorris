@@ -78,8 +78,6 @@ def eh_posicao(arg):
     eh_posicao(arg) devolve True se o argumento corresponde ao TAD
     posicao e False caso contrario.
     """
-    # verifica se arg satisfaz a representacao interna,dicionario
-    # verifica se "linha" e "coluna" existem no dicionario de tamanho 2
     return ( isinstance(arg,dict) and len(arg) == 2 and 
         "coluna" in arg and "linha" in arg and 
         isinstance(arg["coluna"],str) and isinstance(arg["linha"],str)
